@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🍽️ My Recipes</h1>
+
+<fieldset>
+  <legend>Filter</legend>
+
+  <input id="search" placeholder="Search..." />
+
+  <select id="category-filter">
+    <option value="">All Categories</option>
+  </select>
+
+  <!-- NEW: STATUS FILTER -->
+  <select id="status-filter">
+    <option value="">All Status</option>
+    <option value="to try">To Try</option>
+    <option value="tried">Tried</option>
+    <option value="perfected">Perfected</option>
+  </select>
+</fieldset>
+
+<fieldset>
+  <legend>Recipes</legend>
+
+  <select id="recipe-select"></select>
+
+  <button id="edit-btn" disabled>Edit</button>
+  <button id="delete-btn" disabled>Delete</button>
+</fieldset>
+
+<fieldset>
+  <legend>Servings</legend>
+  <input type="number" id="servings" min="1">
+</fieldset>
+
+<section>
+  <h2 id="recipe-title"></h2>
+  <p id="recipe-meta"></p>
+
+  <h3>Ingredients</h3>
+  <ul id="ingredient-list"></ul>
+
+  <h3>Instructions</h3>
+  <ol id="instruction-list"></ol>
+
+  <p id="no-recipes" hidden>No recipes found</p>
+</section>
+
+<nav>
+  <a href="add.html">Add</a>
+  <a href="grocery.html">Grocery</a>
+</nav>
+
+</div>
+
+<script type="module" src="assets/js/view.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="container">
+
+<h1 id="form-title">Add Recipe</h1>
+
+<form id="recipe-form">
+  <input id="title" placeholder="Title" required />
+  <input id="servings" type="number" placeholder="Servings" required />
+
+  <textarea id="ingredients" placeholder="1 cup sugar"></textarea>
+  <textarea id="instructions" placeholder="Step 1..."></textarea>
+  <input id="categories" placeholder="veg, dinner" />
+
+  <!-- NEW: STATUS -->
+  <label>Status:</label>
+  <select id="status">
+    <option value="to try">To Try</option>
+    <option value="tried">Tried</option>
+    <option value="perfected">Perfected</option>
+  </select>
+
+  <!-- NEW: RATING -->
+  <label>Rating:</label>
+  <select id="rating">
+    <option value="0">0</option>
+    <option value="1">⭐ 1</option>
+    <option value="2">⭐⭐ 2</option>
+    <option value="3">⭐⭐⭐ 3</option>
+    <option value="4">⭐⭐⭐⭐ 4</option>
+    <option value="5">⭐⭐⭐⭐⭐ 5</option>
+  </select>
+
+  <button type="submit">Save</button>
+</form>
+
+<a href="index.html">⬅ Back</a>
+
+</div>
+
+<script src="assets/js/add.js"></script>
+</body>
+</html>
